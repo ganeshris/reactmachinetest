@@ -1,0 +1,100 @@
+/* sidebar.css */
+
+/* Common styles */
+.sidebar {
+  width: 250px; /* Initial width */
+  height: 100%;
+  background-color: #778184;
+  color: #0e0e0e;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 60px; /* Collapsed width */
+}
+
+.sidebar .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #5f6265;
+}
+
+.sidebar .navbar button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Collapsed width for smaller screens */
+  }
+
+  .sidebar.collapsed {
+    width: 60px; /* Ensure sidebar stays collapsed on smaller screens */
+  }
+
+  .sidebar .navbar h2 {
+    display: none; /* Hide the sidebar title on smaller screens */
+  }
+
+  .sidebar .navbar button {
+    font-size: 1.2em; /* Reduce button size on smaller screens */
+  }
+
+  .sidebar li {
+    padding: 8px; /* Reduce padding for menu items on smaller screens */
+  }
+
+  .sidebar ul {
+    padding-left: 0; /* Remove left padding for nested UL on smaller screens */
+  }
+
+  .sidebar li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar li div svg {
+    display: none; /* Hide submenu toggle icons on smaller screens */
+  }
+
+  .sidebar li div .submenu-icon {
+    display: inline-block; /* Show submenu toggle icon as inline-block */
+  }
+
+  .sidebar li div .submenu-icon svg {
+    margin-left: 5px; /* Add margin to submenu toggle icon */
+  }
+
+  .sidebar ul ul {
+    display: none; /* Hide submenus by default on smaller screens */
+  }
+
+  .sidebar ul ul.active {
+    display: block; /* Show active submenus on smaller screens */
+  }
+}

@@ -1,0 +1,64 @@
+/* LoginPage.css */
+
+.login-container {
+  background: linear-gradient(to bottom, #417cd5, white); /* Linear gradient from blue to white */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+}
+
+  
+  .login-box {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 500px;
+  }
+  
+  .login-left {
+    background-color: #31c2db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 4rem; /* Padding for better spacing */
+}
+  
+  .login-left img {
+    width: 80px;
+  }
+  
+  .login-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 4rem; /* Padding for better spacing */
+}
+  
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.forgot-password, .create-account {
+  margin-top: 1rem; /* Spacing between links and other elements */
+}
+
+.login-form .MuiButton-root {
+  background-color: #1fcf90;
+  color: white;
+  margin-top: 1rem; /* Spacing at the top of the button */
+}
+
+.MuiAlert-root {
+  margin-bottom: 1rem; /* Spacing below the alert */
+}
+  .forgot-password {
+    text-align: right;
+    margin-top: -10px;
+  }
+  

@@ -1,0 +1,29 @@
+
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Horizontally center the cards */
+  }
+  
+  .card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px; /* Adjust margin for better spacing */
+    width: calc(33.33% - 20px); /* Adjust card width based on container width */
+    max-width: 200px; /* Set maximum card width */
+    height: 150px; /* Adjust card height */
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: calc(100% - 20px); /* Single card per row on mobile devices */
+    }
+  }
+  

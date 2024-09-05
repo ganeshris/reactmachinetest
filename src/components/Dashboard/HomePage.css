@@ -1,0 +1,50 @@
+/* HomePage.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #9ee2f5;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjust card width for larger screens */
+  margin: 10px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%; /* Adjust card width for screens up to 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Make cards occupy full width on screens up to 480px */
+  }
+}
